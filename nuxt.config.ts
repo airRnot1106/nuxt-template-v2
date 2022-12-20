@@ -7,4 +7,9 @@ export default defineNuxtConfig({
     host: '0.0.0.0',
   },
   srcDir: 'src',
+  typescript: {
+    tsConfig: {
+      extends: '@tsconfig/strictest/tsconfig.json',
+    },
+  },
 });
