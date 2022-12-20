@@ -9,6 +9,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:tailwindcss/recommended',
     '@nuxtjs/eslint-config-typescript',
+    '@vue/eslint-config-prettier',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -17,8 +18,6 @@ module.exports = {
   },
   plugins: ['vue', '@typescript-eslint', 'tailwindcss'],
   rules: {
-    semi: 'off',
-    'comma-dangle': 'off',
     'tailwindcss/no-custom-classname': [
       'warn',
       {
