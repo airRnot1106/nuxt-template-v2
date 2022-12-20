@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       extends: '@tsconfig/strictest/tsconfig.json',
     },
   },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
   tailwindcss: {
     exposeConfig: true,
     configPath: 'tailwind.config',
