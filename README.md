@@ -1,6 +1,12 @@
-# Nuxt 3 Minimal Starter
+<div align="center">
+<samp>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# nuxt-template-v2
+
+## Nuxt3+ESLint+Prettier+TailwindCSS template
+
+</samp>
+</div>
 
 ## Setup
 
@@ -22,7 +28,7 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn run dev
 ```
 
 ## Production
@@ -30,13 +36,13 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn run build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+yarn run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Check out the [Qiita](https://qiita.com/airRnot1106/items/0be37ee7863825267bb1) for more information.
