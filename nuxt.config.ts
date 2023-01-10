@@ -10,6 +10,9 @@ export default defineNuxtConfig({
   typescript: {
     tsConfig: {
       extends: '@tsconfig/strictest/tsconfig.json',
+      compilerOptions: {
+        noImplicitReturns: false, // For middleware
+      },
     },
   },
   modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],

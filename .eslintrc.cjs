@@ -9,7 +9,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:tailwindcss/recommended',
     '@nuxtjs/eslint-config-typescript',
-    '@vue/eslint-config-prettier',
+    'prettier',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -18,18 +18,15 @@ module.exports = {
   },
   plugins: ['vue', '@typescript-eslint', 'tailwindcss'],
   rules: {
-    'tailwindcss/no-custom-classname': [
-      'warn',
-      {
-        config: 'tailwind.config.cjs',
-      },
-    ],
-    'tailwindcss/classnames-order': 'off',
+    /* typescript */
+    'dot-notation': 'off',
     'no-restricted-imports': [
       'error',
       {
         patterns: [
           '../*',
+          '~/*',
+          '~~/*',
           './assets/*',
           './components/*',
           './pages/*',
@@ -80,5 +77,17 @@ module.exports = {
       'error',
       { prefer: 'type-imports' },
     ],
+
+    /* nuxt */
+    'vue/multi-word-component-names': 'off',
+
+    /* tailwindcss */
+    'tailwindcss/no-custom-classname': [
+      'warn',
+      {
+        config: 'tailwind.config.cjs',
+      },
+    ],
+    'tailwindcss/classnames-order': 'off',
   },
 };
